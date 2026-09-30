@@ -15,7 +15,7 @@
 - `data/intake/`와 `data/opportunities.csv`를 먼저 읽고 URL·프로그램명·연도로 중복을 확인한다.
 - 현재 추적 항목은 `data/opportunities.csv`, 정성 평가는 `data/evaluations.csv`에 기록한다.
 - 확인되지 않은 사실은 추측하지 않고 `미확인`으로 표시한다. 오래된 Radar 보고는 원본 단서이지 현재 공고의 증거가 아니다.
-- `reports/weekly/YYYY-MM-DD.md`에 새 항목, 상태 변경, 임박 마감, 공식 출처, 추천 행동을 기록한다.
+- `reports/daily/YYYY-MM-DD.md`에 새 항목, 상태 변경, 임박 마감, 공식 출처, 추천 행동을 기록한다.
 - `scripts/validate.ps1` 실행 후 실제 변경을 커밋하고 `origin`에 푸시한다. 실패는 명시적으로 보고한다.
 
 스킬 페이지: https://chatgpt.com/skills?skill_id=6abc9a35d87881918df113fb85577026

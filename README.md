@@ -13,7 +13,7 @@ radar/
 │  ├─ evaluations.csv           학술 적합성·경험 가치·경쟁·준비 부담
 │  └─ intake/                   과거 Radar 보고에서 수집한 원본 링크
 ├─ reports/
-│  └─ weekly/                   예약 작업의 날짜별 변경 요약
+│  └─ daily/                    예약 작업의 날짜별 변경 요약
 ├─ docs/
 │  ├─ workflow.md               조사·상태 변경·알림 기준
 │  └─ automation.md             예약 작업과 Git 동기화 절차
