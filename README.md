@@ -16,7 +16,8 @@ radar/
 │  └─ daily/                    예약 작업의 날짜별 변경 요약
 ├─ docs/
 │  ├─ workflow.md               조사·상태 변경·알림 기준
-│  └─ automation.md             예약 작업과 Git 동기화 절차
+│  ├─ automation.md             예약 작업과 Git 동기화 절차
+│  └─ user-context.md           공개 가능한 적합성 판단 기준
 └─ scripts/
    └─ validate.ps1              목록의 기본 형식 검사
 ```
@@ -27,6 +28,7 @@ radar/
 - [정성 평가](data/evaluations.csv): 학술 적합성과 현지 경험 가치를 별도로 평가.
 - [기존 Radar 링크 84개](data/intake/2026-09-30-radar-links.csv): Student & Research Radar, CAU Daily Radar, 레이더 일정 정리에서 가져온 원본. 이 목록은 과거 보고의 링크 인덱스이며 현재 모집 상태를 보증하지 않습니다.
 - [운영 규칙](docs/workflow.md): 중복 처리와 검증 기준.
+- [적합성 판단 기준](docs/user-context.md): 공개 가능한 일반 원칙. 개인 맥락은 Git에서 제외한 `docs/user-private.local.md`에만 둡니다.
 
 상태는 `apply`(신청 검토), `watch`(공고·등록 대기), `attend`(청강·시청), `committed`(이미 확정), `closed`(종료), `review`(재확인 필요) 중 하나입니다. 과거의 날짜나 자격을 재검증하지 못한 항목은 `review`로 둡니다.
 
