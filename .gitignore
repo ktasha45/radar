@@ -3,3 +3,7 @@ docs/user-private.local.md
 
 # Conversation decisions and preferences are local only.
 data/user-decisions.local.jsonl
+
+# Personal application planning and opportunity reviews.
+docs/lanl-application-plan.local.md
+docs/opportunity-review.local.md
