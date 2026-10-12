@@ -5,7 +5,7 @@
 실행 절차:
 
 1. 작업 위치 `C:\godspell\radar`에서 최신 `origin`을 확인하고 동기화한다.
-2. `AGENTS.md`, `README.md`, `docs/workflow.md`, `docs/user-context.md`, `data/opportunities.csv`, `data/evaluations.csv`, `data/intake/`를 읽는다. 같은 컴퓨터에 `docs/user-private.local.md`가 있으면 함께 읽되 커밋하지 않는다. 적합성 평가에서는 확인된 사실과 추정을 구별한다.
+2. `AGENTS.md`, `README.md`, `docs/workflow.md`, `docs/user-context.md`, `data/opportunities.csv`, `data/evaluations.csv`, `data/intake/`를 읽는다. 같은 컴퓨터에 `docs/user-private.local.md`와 `data/user-decisions.local.jsonl`이 있으면 함께 읽되 커밋하지 않는다. 최신 확인된 우선순위·보류·신청 상태를 평가에 반영한다. 적합성 평가에서는 확인된 사실과 추정을 구별한다.
 3. 공식 출처에서 새 항목과 기존 항목의 상태를 조사한다. 변화가 있으면 `data/opportunities.csv`와 `data/evaluations.csv`를 갱신하고 `reports/daily/YYYY-MM-DD.md`를 작성한다.
 4. `scripts/validate.ps1`을 실행한다. 개인 정보나 인증 정보를 저장소에 넣지 않는다.
 5. 변경 파일을 커밋하고 `origin`에 푸시한다. 실패하면 원인과 아직 반영되지 않은 내용을 사용자에게 알린다.

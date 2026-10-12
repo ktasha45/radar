@@ -1,2 +1,5 @@
 # Personal context stays on this computer.
 docs/user-private.local.md
+
+# Conversation decisions and preferences are local only.
+data/user-decisions.local.jsonl

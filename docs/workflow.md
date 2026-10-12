@@ -13,3 +13,19 @@
 ## CSV 필드
 
 `id`는 한 기회를 여러 회차에 걸쳐 추적하는 고정 식별자입니다. 날짜는 ISO 형식 `YYYY-MM-DD`을 사용합니다. `deadline`은 신청·등록 마감이며, 시각/시간대가 중요하면 `notes`에도 기록합니다. `source_url`에는 공식 페이지를 넣습니다. `last_checked`는 해당 행의 사실관계를 마지막으로 확인한 날입니다.
+
+## 대화 맥락 동기화
+
+대화에서 확인된 변경은 매 응답 종료 전에 반영한다. 현재 개인 맥락은 `docs/user-private.local.md`에 정리하고, 사용자 결정 이력은 Git에서 제외한 `data/user-decisions.local.jsonl`에 추가한다. 공식 행사 상태와 개인의 선택은 분리한다.
+
+JSONL 기록 필드:
+
+- `date`: 사용자 발언을 확인한 날짜, YYYY-MM-DD.
+- `opportunity_id`: 기회 CSV의 ID. 일반 맥락이면 `null`.
+- `scope`: 예를 들어 `summer-2027`, `winter-2027`, `research`, `funding`, `schedule`.
+- `kind`: `priority`, `interest`, `decision`, `application_status`, `fact`, `constraint` 중 하나.
+- `value`: 확인된 내용.
+- `certainty`: `confirmed`, `tentative`, `unknown` 중 하나.
+- `source`: 직접 사용자 확인임을 나타내는 짧은 근거. 사적인 원문 전체는 저장하지 않는다.
+
+같은 기회·범위·종류에서는 최신 confirmed 기록을 현재 값으로 사용한다. tentative 기록으로 확정된 결정을 덮어쓰지 않는다. explicit 정정은 새 confirmed 기록으로 남긴다. 이력 파일은 읽는 사람과 예약 Radar가 판단을 재현하기 위한 것이며 별도 감시 서비스가 아니다.
