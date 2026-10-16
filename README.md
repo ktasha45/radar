@@ -2,12 +2,14 @@
 
 연구·교육 기회를 발견하고, 공식 출처를 확인하며, 다음 행동까지 추적하는 저장소입니다. 기준 시간대는 Asia/Seoul입니다.
 
+별도의 Radar `SKILL.md`는 사용하지 않습니다. [AGENTS.md](AGENTS.md)와 [운영 규칙](docs/workflow.md)이 이 저장소의 탐색·검증·기록 절차입니다.
+
 ## 폴더 구조
 
 ```text
 radar/
 ├─ README.md                    운영 방식과 폴더 안내
-├─ AGENTS.md                    Radar 스킬의 프로젝트 실행 지침
+├─ AGENTS.md                    Radar의 프로젝트 실행 지침
 ├─ data/
 │  ├─ opportunities.csv         현재 추적하는 기회의 단일 목록
 │  ├─ evaluations.csv           학술 적합성·경험 가치·경쟁·준비 부담
