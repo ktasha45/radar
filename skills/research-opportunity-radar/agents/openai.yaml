@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Opportunity Radar"
+  short_description: "분야별 연구·학교·워크숍·대회 기회를 찾아 Radar에 기록합니다"
+  default_prompt: "Use $research-opportunity-radar to find research opportunities in the topics I specify, verify official calls, and organize the results in my Radar repository."

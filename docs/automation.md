@@ -7,11 +7,11 @@
 1. 작업 위치 `C:\godspell\radar`에서 최신 `origin`을 확인하고 동기화한다.
 2. `AGENTS.md`, `README.md`, `docs/workflow.md`, `docs/user-context.md`, `data/opportunities.csv`, `data/evaluations.csv`, `data/intake/`를 읽는다. 같은 컴퓨터에 `docs/user-private.local.md`와 `data/user-decisions.local.jsonl`이 있으면 함께 읽되 커밋하지 않는다. 최신 확인된 우선순위·보류·신청 상태를 평가에 반영한다. 적합성 평가에서는 확인된 사실과 추정을 구별한다.
 3. 공식 출처에서 새 항목과 기존 항목의 상태를 조사한다. 변화가 있으면 `data/opportunities.csv`와 `data/evaluations.csv`를 갱신하고 `reports/daily/YYYY-MM-DD.md`를 작성한다.
-4. `scripts/validate.ps1`을 실행한다. 개인 정보나 인증 정보를 저장소에 넣지 않는다.
+4. PowerShell이 있으면 `scripts/validate.ps1`, 없으면 `python3 skills/research-opportunity-radar/scripts/validate_radar.py --root .`를 실행한다. 개인 정보나 인증 정보를 저장소에 넣지 않는다.
 5. 변경 파일을 커밋하고 `origin`에 푸시한다. 실패하면 원인과 아직 반영되지 않은 내용을 사용자에게 알린다.
 
 자동화의 실제 프롬프트와 대상 작업은 Codex 예약 작업 설정에서 관리합니다. 이 파일은 실행자가 저장소 안에서 따를 절차입니다.
 
-이 프로젝트는 별도의 Radar 스킬을 전제로 하지 않고 `AGENTS.md`의 절차를 직접 따른다. 다른 대화나 컴퓨터가 이 로컬 저장소에 접근하거나 갱신한다는 보장은 없다. 위의 예약 작업 설명만으로 현재 컴퓨터에서의 실제 예약 실행 상태가 확인되는 것은 아니다.
+2026-10-16 요청으로 [research-opportunity-radar](../skills/research-opportunity-radar/SKILL.md) skill을 만들었다. 필요할 때 호출할 수 있으며, 여기서는 `AGENTS.md`의 저장소 운영과 함께 적용한다. 이 생성 작업은 기존 예약 작업의 프롬프트·일정·실행 상태를 변경하거나 검증한 것이 아니다. 다른 대화나 컴퓨터가 이 로컬 저장소에 접근하거나 갱신한다는 보장은 없다.
 
 사용자 알림은 변경 목록만 나열하지 않고, 기존 Radar처럼 한국어 줄글로 왜 중요한지와 다음 행동을 설명한다. 변경이 없는 날은 불필요한 알림을 보내지 않는다.

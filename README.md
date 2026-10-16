@@ -2,7 +2,9 @@
 
 연구·교육 기회를 발견하고, 공식 출처를 확인하며, 다음 행동까지 추적하는 저장소입니다. 기준 시간대는 Asia/Seoul입니다.
 
-별도의 Radar `SKILL.md`는 사용하지 않습니다. [AGENTS.md](AGENTS.md)와 [운영 규칙](docs/workflow.md)이 이 저장소의 탐색·검증·기록 절차입니다.
+필요할 때 [research-opportunity-radar skill](skills/research-opportunity-radar/SKILL.md)로 전체 또는 분야별 기회를 탐색합니다. [AGENTS.md](AGENTS.md)와 [운영 규칙](docs/workflow.md)에 따라 찾은 기회를 기존 목록·평가·날짜별 보고서에 연결합니다. 개인 배경·지원 결정은 로컬 전용 파일에서 읽고 skill에 복제하지 않습니다.
+
+예: “논리학·복잡도 쪽 학교나 워크숍을 찾아주세요”, “미국에서 여름에 할 만한 연구 기회를 찾아주세요”, “Lean 관련 short paper 제출처를 찾아 Radar에 정리해주세요”. 명시적으로는 `$research-opportunity-radar`를 사용할 수 있습니다.
 
 ## 폴더 구조
 
@@ -16,6 +18,7 @@ radar/
 │  └─ intake/                   과거 Radar 보고에서 수집한 원본 링크
 ├─ reports/
 │  └─ daily/                    예약 작업의 날짜별 변경 요약
+├─ skills/research-opportunity-radar/  필요할 때 호출하는 탐색·평가·기록 skill 원본
 ├─ docs/
 │  ├─ workflow.md               조사·상태 변경·알림 기준
 │  ├─ automation.md             예약 작업과 Git 동기화 절차
