@@ -29,6 +29,7 @@ radar/
 
 ## 어디부터 볼까
 
+- [10월 12·14·19일 Radar 통합 정리](reports/reviews/2026-10-19-pasted-radar.md): 17개 기회, 신규 LLNL·PriSC·Albany, 공식 재검증·마감·준비물과 확인이 남은 조건.
 - [현재 기회 목록](data/opportunities.csv): 항목별 상태, 마감, 공식 링크, 다음 행동.
 - [정성 평가](data/evaluations.csv): 학술 적합성과 현지 경험 가치를 별도로 평가.
 - [기존 Radar 링크 84개](data/intake/2026-09-30-radar-links.csv): Student & Research Radar, CAU Daily Radar, 레이더 일정 정리에서 가져온 원본. 이 목록은 과거 보고의 링크 인덱스이며 현재 모집 상태를 보증하지 않습니다.
