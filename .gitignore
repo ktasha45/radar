@@ -7,3 +7,5 @@ data/user-decisions.local.jsonl
 # Personal application planning and opportunity reviews.
 docs/lanl-application-plan.local.md
 docs/opportunity-review.local.md
+
+docs/oibc-2026-data-audit.local.json
