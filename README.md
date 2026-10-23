@@ -29,6 +29,8 @@ radar/
 
 ## 어디부터 볼까
 
+- [10월23일 제공 Radar 정리](reports/daily/2026-10-23.md): Lean Kernel Challenge·SODA 장학·LNCC·ICTP 신규 추적과 기존 Aalto·ESSLLI 보완.
+
 - [10월 12·14·19일 Radar 통합 정리](reports/reviews/2026-10-19-pasted-radar.md): 17개 기회, 신규 LLNL·PriSC·Albany, 공식 재검증·마감·준비물과 확인이 남은 조건.
 - [현재 기회 목록](data/opportunities.csv): 항목별 상태, 마감, 공식 링크, 다음 행동.
 - [정성 평가](data/evaluations.csv): 학술 적합성과 현지 경험 가치를 별도로 평가.
